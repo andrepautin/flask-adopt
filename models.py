@@ -27,12 +27,10 @@ class Pet(db.Model):
     name = db.Column(db.String(20), 
                      nullable=False)
     
-    species = db.Column(db.String(20), 
+    species = db.Column(db.Text, 
                         nullable=False)
 
-    photo_url = db.Column(db.Text, 
-                          nullable=False, 
-                          default='')
+    photo_url = db.Column(db.Text, default='')
 
     # todo check when working on form for (baby, young, adult, senior)
     age = db.Column(db.Text, 
@@ -41,6 +39,6 @@ class Pet(db.Model):
     notes = db.Column(db.Text)
 
     # todo check default choices when working on form
-    available = db.Column(db.Boolean, nullable=False) 
+    available = db.Column(db.Boolean, default=True) 
 
     
