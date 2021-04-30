@@ -1,7 +1,7 @@
 """Models for adopt app."""
 
 from flask_sqlalchemy import SQLAlchemy
-from app import app
+
 
 db = SQLAlchemy()
 
@@ -41,6 +41,6 @@ class Pet(db.Model):
     notes = db.Column(db.Text)
 
     # todo check default choices when working on form
-    available = db.Column(db.Boolean, nullable=False, default='available') 
+    available = db.Column(db.Boolean, nullable=False) 
 
     

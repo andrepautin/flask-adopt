@@ -28,4 +28,4 @@ toolbar = DebugToolbarExtension(app)
 def homepage():
     """Show a list of the pets"""
     pets = Pet.query.all()
-    return render_template('list_pets.html',pets=pets)
+    return render_template('list_pets.html', pets=pets)
