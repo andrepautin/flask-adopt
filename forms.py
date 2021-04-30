@@ -5,7 +5,7 @@ from wtforms.validators import InputRequired, Optional, Email, Optional, URL
 
 
 class AddPet(FlaskForm):
-    """Form for adding snacks."""
+    """Form for adding pet to adopt."""
 
     name = StringField("Pet Name",
                         validators=[InputRequired()])

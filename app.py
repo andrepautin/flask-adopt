@@ -54,8 +54,9 @@ def add_pet():
 
 @app.route('/<int:pet_id>', methods=["GET", "POST"])
 def show_pet_details(pet_id):
+    """Shows pet details and allows user to edit details"""
     pet = Pet.query.get_or_404(pet_id)
-    form = EditPet()
+    form = EditPet(obj=pet)
 
     if form.validate_on_submit():
         photo_url = form.photo_url.data

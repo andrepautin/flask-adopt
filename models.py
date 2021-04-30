@@ -39,6 +39,6 @@ class Pet(db.Model):
     notes = db.Column(db.Text)
 
     # todo check default choices when working on form
-    available = db.Column(db.Boolean, default=True) 
+    available = db.Column(db.Boolean, nullable=False, default=True) 
 
     
