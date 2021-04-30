@@ -12,13 +12,13 @@ Pet.query.delete()
 # Add pets
 dog = Pet(name="mailo", 
             species = 'dog', 
-            photo_url = 'https://rithm-students-assets.s3.amazonaws.com/r21/exercises/flask-adopt/handout/_images/screen.png',
+            photo_url = 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxzZWFy[…]fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
             age = 2,
             available= False
             )
 cat = Pet(name = "Bosbos", 
             species = 'cat', 
-            photo_url = 'https://rithm-students-assets.s3.amazonaws.com/r21/exercises/flask-adopt/handout/_images/screen.png',
+            photo_url = 'https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MnwxMjA3fDB8MHxzZWFy[…]fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
             age = 3,
             available = True
             )
